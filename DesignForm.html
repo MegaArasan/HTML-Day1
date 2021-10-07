@@ -1,0 +1,62 @@
+<!-- 7.Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>body{
+    padding: 10pt;
+    }</style>
+    <fieldset>
+        <header><center>Yes! I want to subscribe to Mag-O-Zine</center></header><br>
+            <style>
+            header{
+                background-color:red;color: white;}
+            input{
+                border:none;
+                border-bottom: 2pt solid black; 
+                display: inline-block;
+             }
+         div{
+                    display: block;
+                }
+            </style>
+        <div class="1st">
+            <label for="fname">FirstName:</label>
+            <input type="text" placeholder="FirstName">
+            <label for="lname">LastName:</label>
+            <input type="text" placeholder="LastName"><br>
+            <label for="address">Address:</label>
+            <input type="text" placeholder="Address"><br>
+            <label for="city">City:</label>
+            <input type="text" placeholder="Enter Your City">
+            <label for="state">State:</label>
+           <input type="text" placeholder="Enter Your State">
+           <label for="zipcode">Zip:</label>
+           <input type="number" placeholder="Enter Your zipcode"><br>
+        </div><br>
+        <div class="2nd">
+            <label>Subscripe for:</label>
+            <input type="radio" value="1year"  name="subscripefor">
+            <label for="1year">1 year($19.95)</label>
+            <input type="radio" value="2years"  name="subscripefor">
+            <label for="2years">2 year($35.00)</label>
+        </div><br>
+
+        <div class="3rd">
+            <label for="moreinfo">Send me more information about:</label><br>
+            <input type="checkbox" value="computerzine" id="computerzine" name="moreinformation">
+            <label for="computer-zine">Computer-Zine</label><br>
+            <input type="checkbox" value="fisherzine" id="fisherzine" name="moreinformation">
+            <label for="fisher-zine">Fisher-Zine</label><br>
+            <input type="checkbox" value="cat-o-zine" id="cat-o-zine" name="moreinformation">
+            <label for="computer-zine">Cat-O-Zine</label><br>
+            <button id="btn">Send</button>
+        </div>
+    </fieldset>
+</body>
+</html>
